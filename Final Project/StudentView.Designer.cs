@@ -145,8 +145,6 @@
             // 
             this.columnsComboBox.FormattingEnabled = true;
             this.columnsComboBox.Items.AddRange(new object[] {
-            "FirstName",
-            "LastName",
             "SubjectName",
             "TeacherName",
             "ClassTime",

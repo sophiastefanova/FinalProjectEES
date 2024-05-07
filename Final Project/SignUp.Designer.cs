@@ -68,7 +68,7 @@
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(81, 18);
-            this.label2.TabIndex = 1;
+            this.label2.TabIndex = 0;
             this.label2.Text = "Username:";
             // 
             // label3
@@ -88,7 +88,7 @@
             this.username.Margin = new System.Windows.Forms.Padding(2);
             this.username.Name = "username";
             this.username.Size = new System.Drawing.Size(89, 20);
-            this.username.TabIndex = 4;
+            this.username.TabIndex = 1;
             // 
             // password
             // 
@@ -96,7 +96,7 @@
             this.password.Margin = new System.Windows.Forms.Padding(2);
             this.password.Name = "password";
             this.password.Size = new System.Drawing.Size(89, 20);
-            this.password.TabIndex = 5;
+            this.password.TabIndex = 3;
             // 
             // label5
             // 
@@ -106,7 +106,7 @@
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(52, 18);
-            this.label5.TabIndex = 7;
+            this.label5.TabIndex = 13;
             this.label5.Text = "Image:";
             // 
             // pictureBox
@@ -127,7 +127,7 @@
             this.student_button.Margin = new System.Windows.Forms.Padding(2);
             this.student_button.Name = "student_button";
             this.student_button.Size = new System.Drawing.Size(62, 17);
-            this.student_button.TabIndex = 9;
+            this.student_button.TabIndex = 8;
             this.student_button.TabStop = true;
             this.student_button.Text = "Student";
             this.student_button.UseVisualStyleBackColor = true;
@@ -138,7 +138,7 @@
             this.browse_button.Margin = new System.Windows.Forms.Padding(2);
             this.browse_button.Name = "browse_button";
             this.browse_button.Size = new System.Drawing.Size(65, 23);
-            this.browse_button.TabIndex = 10;
+            this.browse_button.TabIndex = 14;
             this.browse_button.Text = "Browse";
             this.browse_button.UseVisualStyleBackColor = true;
             this.browse_button.Click += new System.EventHandler(this.browse_button_Click_1);
@@ -149,7 +149,7 @@
             this.save_button.Margin = new System.Windows.Forms.Padding(2);
             this.save_button.Name = "save_button";
             this.save_button.Size = new System.Drawing.Size(65, 23);
-            this.save_button.TabIndex = 11;
+            this.save_button.TabIndex = 15;
             this.save_button.Text = "Save";
             this.save_button.UseVisualStyleBackColor = true;
             this.save_button.Click += new System.EventHandler(this.save_button_Click);
@@ -161,7 +161,7 @@
             this.teacher_button.Margin = new System.Windows.Forms.Padding(2);
             this.teacher_button.Name = "teacher_button";
             this.teacher_button.Size = new System.Drawing.Size(65, 17);
-            this.teacher_button.TabIndex = 12;
+            this.teacher_button.TabIndex = 9;
             this.teacher_button.Text = "Teacher";
             this.teacher_button.UseVisualStyleBackColor = true;
             // 
@@ -173,7 +173,7 @@
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(84, 18);
-            this.label4.TabIndex = 14;
+            this.label4.TabIndex = 6;
             this.label4.Text = "Last Name:";
             // 
             // label6
@@ -184,7 +184,7 @@
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(85, 18);
-            this.label6.TabIndex = 13;
+            this.label6.TabIndex = 4;
             this.label6.Text = "First Name:";
             // 
             // last_name
@@ -193,7 +193,7 @@
             this.last_name.Margin = new System.Windows.Forms.Padding(2);
             this.last_name.Name = "last_name";
             this.last_name.Size = new System.Drawing.Size(89, 20);
-            this.last_name.TabIndex = 16;
+            this.last_name.TabIndex = 7;
             // 
             // first_name
             // 
@@ -201,7 +201,7 @@
             this.first_name.Margin = new System.Windows.Forms.Padding(2);
             this.first_name.Name = "first_name";
             this.first_name.Size = new System.Drawing.Size(89, 20);
-            this.first_name.TabIndex = 15;
+            this.first_name.TabIndex = 5;
             // 
             // register_button
             // 
@@ -211,7 +211,7 @@
             this.register_button.Margin = new System.Windows.Forms.Padding(2);
             this.register_button.Name = "register_button";
             this.register_button.Size = new System.Drawing.Size(80, 32);
-            this.register_button.TabIndex = 17;
+            this.register_button.TabIndex = 10;
             this.register_button.Text = "Register";
             this.register_button.UseVisualStyleBackColor = false;
             this.register_button.Click += new System.EventHandler(this.register_button_Click);
@@ -224,7 +224,7 @@
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(67, 32);
-            this.button1.TabIndex = 18;
+            this.button1.TabIndex = 11;
             this.button1.Text = "LogIn";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -237,7 +237,7 @@
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(146, 15);
-            this.label7.TabIndex = 19;
+            this.label7.TabIndex = 12;
             this.label7.Text = "Already have an account?";
             // 
             // SignUp

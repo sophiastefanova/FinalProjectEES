@@ -96,7 +96,6 @@ namespace MajorProjectEES
 
         private void refresh_button_Click(object sender, EventArgs e)
         {
-            
 
             string query = @"
                 SELECT st.FirstName, st.LastName, s.SubjectName, t.FirstName + ' ' + t.LastName as TeacherName, c.ClassTime, c.RoomNumber
@@ -204,7 +203,8 @@ namespace MajorProjectEES
             string query = String.Empty;
             string inputText = textBox1.Text;
 
-            if (selectedItem == "FirstName")
+            
+            if (selectedItem == "SubjectName")
             {
                 query = @"
                 SELECT st.FirstName, st.LastName, s.SubjectName, t.FirstName + ' ' + t.LastName as TeacherName, c.ClassTime, c.RoomNumber
@@ -213,29 +213,7 @@ namespace MajorProjectEES
                 LEFT JOIN Classes c ON e.ClassID = c.ClassID
                 LEFT JOIN Subjects s ON c.SubjectID = s.SubjectID
                 LEFT JOIN Teachers t ON c.TeacherID = t.TeacherID
-                WHERE st.FirstName = @Textt";
-            }
-            else if (selectedItem == "LastName")
-            {
-                query = @"
-                SELECT st.FirstName, st.LastName, s.SubjectName, t.FirstName + ' ' + t.LastName as TeacherName, c.ClassTime, c.RoomNumber
-                FROM Students st
-                LEFT JOIN Enrollments e ON st.StudentID = e.StudentID
-                LEFT JOIN Classes c ON e.ClassID = c.ClassID
-                LEFT JOIN Subjects s ON c.SubjectID = s.SubjectID
-                LEFT JOIN Teachers t ON c.TeacherID = t.TeacherID
-                WHERE st.LastName = @Textt";
-            }
-            else if (selectedItem == "SubjectName")
-            {
-                query = @"
-                SELECT st.FirstName, st.LastName, s.SubjectName, t.FirstName + ' ' + t.LastName as TeacherName, c.ClassTime, c.RoomNumber
-                FROM Students st
-                LEFT JOIN Enrollments e ON st.StudentID = e.StudentID
-                LEFT JOIN Classes c ON e.ClassID = c.ClassID
-                LEFT JOIN Subjects s ON c.SubjectID = s.SubjectID
-                LEFT JOIN Teachers t ON c.TeacherID = t.TeacherID
-                WHERE s.SubjectName = @Textt";
+                WHERE s.SubjectName = @Textt and st.StudentID = @StudentID";
             }
             else if (selectedItem == "TeacherName")
             {
@@ -246,7 +224,7 @@ namespace MajorProjectEES
                 LEFT JOIN Classes c ON e.ClassID = c.ClassID
                 LEFT JOIN Subjects s ON c.SubjectID = s.SubjectID
                 LEFT JOIN Teachers t ON c.TeacherID = t.TeacherID
-                WHERE t.FirstName + ' ' + t.LastName = @Textt";
+                WHERE t.FirstName + ' ' + t.LastName = @Textt and st.StudentID = @StudentID";
             }
             else if (selectedItem == "ClassTime")
             {
@@ -257,7 +235,7 @@ namespace MajorProjectEES
                 LEFT JOIN Classes c ON e.ClassID = c.ClassID
                 LEFT JOIN Subjects s ON c.SubjectID = s.SubjectID
                 LEFT JOIN Teachers t ON c.TeacherID = t.TeacherID
-                WHERE c.ClassTime = @Textt";
+                WHERE c.ClassTime = @Textt and st.StudentID = @StudentID";
             }
             else if (selectedItem == "RoomNumber")
             {
@@ -268,7 +246,7 @@ namespace MajorProjectEES
                 LEFT JOIN Classes c ON e.ClassID = c.ClassID
                 LEFT JOIN Subjects s ON c.SubjectID = s.SubjectID
                 LEFT JOIN Teachers t ON c.TeacherID = t.TeacherID
-                WHERE c.RoomNumber = @Textt";
+                WHERE c.RoomNumber = @Textt and st.StudentID = @StudentID";
             }
             else
             {
@@ -281,6 +259,7 @@ namespace MajorProjectEES
             {
                 SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(query, sqlConnection);
                 sqlDataAdapter.SelectCommand.Parameters.AddWithValue("@Textt", inputText);
+                sqlDataAdapter.SelectCommand.Parameters.AddWithValue("@StudentID", userID);
 
                 DataTable dataTable = new DataTable();
                 sqlDataAdapter.Fill(dataTable);
