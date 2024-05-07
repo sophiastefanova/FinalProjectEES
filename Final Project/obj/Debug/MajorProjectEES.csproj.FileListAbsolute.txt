@@ -1,0 +1,15 @@
+H:\Final Project\bin\Debug\MajorProjectEES.exe.config
+H:\Final Project\bin\Debug\MajorProjectEES.exe
+H:\Final Project\bin\Debug\MajorProjectEES.pdb
+H:\Final Project\obj\Debug\MajorProjectEES.csproj.AssemblyReference.cache
+H:\Final Project\obj\Debug\MajorProjectEES.AnimatedPhotoForm.resources
+H:\Final Project\obj\Debug\MajorProjectEES.LogIn.resources
+H:\Final Project\obj\Debug\MajorProjectEES.Properties.Resources.resources
+H:\Final Project\obj\Debug\MajorProjectEES.SignUp.resources
+H:\Final Project\obj\Debug\MajorProjectEES.StudentView.resources
+H:\Final Project\obj\Debug\MajorProjectEES.SubjectControl.resources
+H:\Final Project\obj\Debug\MajorProjectEES.TeacherView.resources
+H:\Final Project\obj\Debug\MajorProjectEES.csproj.GenerateResource.cache
+H:\Final Project\obj\Debug\MajorProjectEES.csproj.CoreCompileInputs.cache
+H:\Final Project\obj\Debug\MajorProjectEES.exe
+H:\Final Project\obj\Debug\MajorProjectEES.pdb
