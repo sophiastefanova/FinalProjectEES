@@ -21,6 +21,7 @@ namespace MajorProjectEES
         {
             InitializeComponent();
             this.userID = userID;
+            
         }
 
         private void teacherid_box_TextChanged(object sender, EventArgs e)

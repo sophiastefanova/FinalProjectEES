@@ -95,6 +95,7 @@
             this.password.Location = new System.Drawing.Point(169, 129);
             this.password.Margin = new System.Windows.Forms.Padding(2);
             this.password.Name = "password";
+            this.password.PasswordChar = '*';
             this.password.Size = new System.Drawing.Size(89, 20);
             this.password.TabIndex = 3;
             // 
@@ -266,7 +267,6 @@
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "SignUp";
-            this.Text = "SignUp";
             this.Load += new System.EventHandler(this.SignUp_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
             this.ResumeLayout(false);

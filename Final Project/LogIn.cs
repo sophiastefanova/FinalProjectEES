@@ -162,7 +162,7 @@ namespace MajorProjectEES
             }
             else
             {
-                usernameError.SetError(username, "Username cannot be empty!");
+                usernameError.SetError(username, "Incomplete Username!");
 
                 corrLenght = false;
             }

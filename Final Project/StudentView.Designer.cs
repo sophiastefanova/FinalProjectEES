@@ -47,7 +47,7 @@
             // 
             // refresh_button
             // 
-            this.refresh_button.Location = new System.Drawing.Point(187, 227);
+            this.refresh_button.Location = new System.Drawing.Point(187, 288);
             this.refresh_button.Margin = new System.Windows.Forms.Padding(2);
             this.refresh_button.Name = "refresh_button";
             this.refresh_button.Size = new System.Drawing.Size(71, 25);
@@ -62,9 +62,10 @@
             this.dataGridView1.Location = new System.Drawing.Point(187, 118);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(222, 105);
+            this.dataGridView1.Size = new System.Drawing.Size(393, 157);
             this.dataGridView1.TabIndex = 10;
             // 
             // label3
@@ -92,7 +93,7 @@
             // classesComboBox
             // 
             this.classesComboBox.FormattingEnabled = true;
-            this.classesComboBox.Location = new System.Drawing.Point(478, 118);
+            this.classesComboBox.Location = new System.Drawing.Point(613, 118);
             this.classesComboBox.Name = "classesComboBox";
             this.classesComboBox.Size = new System.Drawing.Size(121, 21);
             this.classesComboBox.TabIndex = 14;
@@ -101,7 +102,7 @@
             // 
             this.Enroll.AutoSize = true;
             this.Enroll.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Enroll.Location = new System.Drawing.Point(475, 93);
+            this.Enroll.Location = new System.Drawing.Point(610, 93);
             this.Enroll.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Enroll.Name = "Enroll";
             this.Enroll.Size = new System.Drawing.Size(80, 17);
@@ -110,7 +111,7 @@
             // 
             // enroll_button
             // 
-            this.enroll_button.Location = new System.Drawing.Point(528, 160);
+            this.enroll_button.Location = new System.Drawing.Point(663, 160);
             this.enroll_button.Margin = new System.Windows.Forms.Padding(2);
             this.enroll_button.Name = "enroll_button";
             this.enroll_button.Size = new System.Drawing.Size(71, 25);
@@ -121,7 +122,7 @@
             // 
             // logout_button
             // 
-            this.logout_button.Location = new System.Drawing.Point(338, 227);
+            this.logout_button.Location = new System.Drawing.Point(509, 288);
             this.logout_button.Margin = new System.Windows.Forms.Padding(2);
             this.logout_button.Name = "logout_button";
             this.logout_button.Size = new System.Drawing.Size(71, 25);
@@ -202,7 +203,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Beige;
-            this.ClientSize = new System.Drawing.Size(634, 324);
+            this.ClientSize = new System.Drawing.Size(773, 347);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.filterButton);
             this.Controls.Add(this.clearButton);
